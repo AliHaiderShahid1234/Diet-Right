@@ -1,0 +1,660 @@
+:root {
+    --primary: black
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Landing Page Container */
+.landing-container {
+    padding: 5% 10%;
+}
+
+/* Ensure the image container is positioned relatively */
+.landing-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Left Image Styling */
+.landing-image {
+    width: 485px;
+    height: 598px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Play Button */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Play Icon */
+.play-button i {
+    font-size: 50px;
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.play-button:hover i {
+    transform: scale(1.2);
+    color: rgba(23, 83, 195, 0.9);
+}
+
+/* Right Section */
+.landing-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.landing-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+
+/* navbar styling */
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+.menu-toggle {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.main-navigation .nav-list {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation .nav-item {
+    background-color: black;
+    margin: 0 15px;
+}
+
+.main-navigation .nav-item a {
+    font-size: 10px;
+    background-color: black;
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.main-navigation .nav-item a:hover {
+    color: var(--primary);
+}
+
+.header_bar {
+    padding: 10px 0;
+}
+
+
+.header_top_right {
+    float: right;
+    text-align: right;
+}
+
+#menu {
+    position: relative;
+    text-align: right;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 4px;
+}
+
+#menu ul li:last-child {
+    margin-right: 0;
+}
+
+#menu ul li a {
+    color: black;
+    padding: 8px 25px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effects for main menu items */
+#menu ul li a:hover,
+#menu ul li.active a,
+#menu ul li.current_page_item>a,
+#menu ul li.current-menu-ancestor>a,
+#menu ul li.current-menu-item>a,
+#menu ul li.current-menu-parent>a {
+    color: var(--primary);
+}
+
+#menu li>ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 999;
+    min-width: 220px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    background: white;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#menu li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* About Section */
+.about-section {
+    padding: 5% 10%;
+}
+
+/* Our Values Section */
+.values-section {
+    background-color: #FBF0F1; /* Off-white darker background */
+    padding: 5% 10%;
+}
+
+/* Title Styling */
+.values-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Value Item Container */
+.value-item {
+    text-align: center;
+}
+
+/* Value Image Styling */
+.value-image {
+    max-width: 150px; /* Larger images */
+    margin-bottom: 15px; /* Space between image and caption */
+    object-fit: contain;
+}
+
+/* Value Caption Styling */
+.value-caption {
+    font-size: 1rem; /* Slightly smaller than the section title */
+    margin: 0;
+}
+
+/* Vertical Divider Styling */
+.vertical-divider {
+    width: 2px;
+    height: 100px;
+    background-color: #959595;
+}
+
+/* About Section */
+.about-section {
+    padding: 5% 10%;
+    padding-bottom: 50px;
+}
+
+/* About Title */
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* About Text with extra padding */
+.about-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 20px;  /* Extra padding added */
+}
+
+/* About Images */
+.about-image {
+    width: 584px;
+    height: 520px;
+    object-fit: cover;
+}
+
+.about-image_2 {
+    width: 414px;
+    height: 414px;
+    object-fit: cover;
+}
+
+/* Services Section Container */
+.services-section {
+    padding: 5% 10%;
+    background-color: #f9f9f9; /* Off-white background */
+  }
+  
+  /* Section Title & Body */
+  .services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .services-body {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Service Item Image */
+  .service-image {
+    max-width: 120px;  /* Adjust size as needed */
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  
+  /* Service Item Title */
+  .service-item-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Service Item Description */
+  .service-item-text {
+    font-size: 0.8rem;
+    color: #777;
+  }
+
+  /* Our Team Section Container */
+.our-team-section {
+  padding: 5% 10%;
+  background-color: #f5f5f5; /* Off-white darker background */
+}
+
+/* Section Title & Description */
+.our-team-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.our-team-description {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Team Member Container */
+.team-member {
+  padding: 15px;
+}
+
+/* Team Member Image */
+.team-image {
+  width: 100%;
+  max-width: 150px; /* Adjust as needed */
+  border-radius: 50%; /* Makes image circular; remove if you want square */
+  margin-bottom: 10px; /* Space between image and text */
+  object-fit: cover;
+}
+
+/* Team Member Name */
+.team-name {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #B81D23;
+}
+
+/* Team Member Role / Description */
+.team-role {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Carousel Section Styling */
+.carousel-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.carousel-section h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.carousel-section p {
+  text-align: center;
+}
+
+/* Testimonial Item */
+.testimonial {
+  background: #f9e7e7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  position: relative;
+  margin: auto;
+}
+
+/* Testimonial Name */
+.testimonial-name {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Owl Carousel Navigation Container - positioned below the carousel items */
+.owl-nav {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Navigation Button Styling */
+.owl-nav button {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50%; /* Makes the button a perfect circle */
+  background-color: white; /* Round background */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+  position: static;
+}
+
+/* Hover Effect */
+.owl-nav button:hover {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+/* Hide dots */
+.owl-dots {
+  display: none;
+}
+
+/* Ensure Bootstrap icons inside nav buttons are sized properly */
+.owl-nav i {
+  font-size: 24px;
+}
+
+/* Insights & News Section */
+.insights-section {
+  background-color: #f9f9f9; /* Off-white background */
+  padding: 40px 0;
+}
+
+.insights-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.insights-description {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Images fill their column, forced height of 48px, no gaps */
+.insights-image {
+  width: 480px;
+  height: 478px;
+  object-fit: cover;
+}
+
+.contact-section {
+  background-color: var(--background-light);
+  padding: 0;
+}
+
+.contact-section .row {
+  min-height: 100vh;
+}
+
+/* Map container: Full height */
+.map-container {
+  height: 100%;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Contact Form Title */
+.contact-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Description */
+.contact-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Input Fields */
+.contact-form .form-group {
+  width: 100%;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Send Button */
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #B81D23;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+  /* Footer Section */
+  .footer-wraper {
+    padding: 70px;
+    padding-inline: 1px;
+  }
+  
+  footer h6 {
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  footer p {
+    font-size: medium;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info i {
+    margin-right: 8px;
+  }
+  
+  .name-headings {
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  
+  .colors {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-color: white;
+  }
+  
+  /* Hover effect: Background changes to primary color while preserving the icon's hollow style */
+  .colors:hover {
+    background-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(1);
+  }
+  
+  
+  /* Icon color remains white on hover */
+  .colors:hover i {
+    color: white;
+  }
+
+/* Button Styling */
+.butn-primary {
+    color: rgba((80, 11, 11, 0.62)55, 255, 255);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: red;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.butn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.view-btn {
+  align-items: center;
+}
+
+/* Phone number */
+
+.phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-first-row {
+  display: flex;
+  align-items: center;
+}
+
+.phone-first-row i {
+  margin-right: 8px; /* Adjust as needed */
+}
+
+.phone-second-row {
+  margin-left: calc(20px + 8px);
+}
+
+/* Copyright */
+
+.copyright {
+  color: white;
+  text-decoration: none;
+}
+
+/* UnderLine Hover */
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.underline-hover a {
+  text-decoration: none;
+  color: white;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
